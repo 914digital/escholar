@@ -1,0 +1,627 @@
+body {
+    background-color: #fff;
+    font-size: 14px;
+}
+img {
+    max-width: 100%;
+}
+
+a {
+	color:#50217e;
+	transition: all .3s ease-in-out;
+}
+
+a:hover, a:focus {
+	color: #715092;
+}
+
+.nav-buttons {
+    float: right;
+    margin-top: 16px;
+}
+.nav-buttons .btn {
+    border: 1px solid #c09ce4;
+    border-radius: 0;
+    color: #c09ce4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #7a33c1;
+    padding: 8px 12px;
+    transition: all .3s ease-in-out;
+}
+.nav-buttons .btn:hover {
+    background-color: #c09ce4;
+    color: #7a33c1;
+}
+.nav-buttons .btn:first-child {
+    margin-right: 7px;
+}
+.banner {
+    background-image: url('/wp-content/themes/escholar15/img/banner.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.banner-text {
+    margin-top: 125px;
+    padding: 20px;
+    background-color: rgba(19, 2, 34, 0.7);
+}
+.banner-text h2 {
+    color: #fff;
+    margin-top: 10px;
+}
+.banner-text p {
+    color: #ccc;
+    font-size: 17px;
+    line-height: 25px;
+}
+.banner-text .btn {
+    border: 1px solid #c09ce4;
+    border-radius: 0;
+    color: #c09ce4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #7a33c1;
+    padding: 8px 33px;
+    transition: all .3s ease-in-out;
+}
+.banner-text .btn:hover {
+    background-color: #c09ce4;
+    color: #7a33c1;
+}
+.banner-stripe {
+    background-color: rgba(255, 255, 255, 0.78);
+    padding: 20px 0;
+    position: absolute;
+    top: 470px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    max-height: 230px;
+}
+.banner-stripe h3 {
+	text-transform:uppercase;
+}
+.banner-stripe-mobile {
+    display: none;
+}
+.page-banner {
+    background-image: url('/wp-content/themes/escholar15/img/page-banner.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+.page-banner-text {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: rgba(19, 2, 34, 0.7);
+}
+.page-banner-text h2 {
+    color: #fff;
+    margin-top: 10px;
+}
+.page-banner-text p {
+    color: #ccc;
+    font-size: 17px;
+    line-height: 25px;
+}
+.page-banner-text .btn {
+    border: 1px solid #c09ce4;
+    border-radius: 0;
+    color: #c09ce4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #7a33c1;
+    padding: 8px 33px;
+    transition: all .3s ease-in-out;
+}
+.page-banner-text .btn:hover {
+    background-color: #c09ce4;
+    color: #7a33c1;
+}
+.page-banner-stripe {
+    background-color: rgba(255, 255, 255, 0.78);
+    padding: 20px 0;
+    position: absolute;
+    top: 350px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.page-banner-stripe h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 33px;
+    color: #50217e;
+}
+
+.page-banner-stripe p {
+	text-align: center;
+    font-size: 17px;
+    color: #26004C;
+}
+
+.main-content {
+	margin-top: 60px;
+	
+}
+
+.main-content h3 {
+	margin-top: 40px;
+}
+
+.page-banner-stripe-mobile {
+    display: none;
+}
+#content {
+    padding: 50px 0;
+}
+.wh-stripe {
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+.wh-stripe h1 {
+    color: #955DCD;
+    font-weight: 300;
+    margin-top: 40px;
+}
+.wh-stripe h4 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.wh-stripe p {
+    color: #7E7E7E;
+    font-size: 18px;
+    font-weight: 300;
+}
+.wh-stripe hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.gr-stripe {
+    background-color: #f2eff4;
+    text-align: center;
+    padding: 40px 0;
+}
+.gr-stripe h4 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.gr-stripe p {
+    color: #7E7E7E;
+    font-size: 18px;
+    font-weight: 300;
+}
+#fr-products span {
+    color: #909090;
+    font-weight: 300;
+}
+#fr-products h3 {
+    margin-top: 0;
+    font-size: 32px;
+    color: #50217e;
+    font-weight: bold;
+}
+#fr-products p {
+    color: #4C4C4C;
+    font-size: 14px;
+}
+.footer-top {
+    background-color: #7a33c1;
+    padding: 40px;
+}
+.footer-top a {
+    color: #eadcf9;
+}
+.footer-top ul {} .footer-top li {
+    list-style: none;
+    line-height: 40px;
+}
+.footer-top .btn {
+    border: 1px solid #c09ce4;
+    border-radius: 0;
+    color: #c09ce4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #7a33c1;
+    padding: 8px 12px;
+    transition: all .3s ease-in-out;
+}
+.footer-top .btn:hover {
+    background-color: #c09ce4;
+    color: #7a33c1;
+}
+.footer-bot {
+    background-color: #4e217c;
+    padding: 20px;
+    color: #ccc;
+    font-weight: 300;
+}
+.social-foot {
+    margin-top: 40px;
+}
+.social-foot a {
+    margin-right: 15px;
+}
+/*
+Bootstrap Styles --------------------------->
+*/
+
+.navbar-default {
+    background-color: rgba(135, 71, 199, 0.87);
+    border-color: transparent;
+}
+.navbar {
+    position: relative;
+    min-height: 70px;
+    margin-bottom: 0px;
+    border: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 30px;
+    border-bottom: 5px solid transparent;
+    transition: all .3s ease-in-out;
+}
+.navbar-nav {
+    float: left;
+    margin-left: 40px;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    margin: 0px 20px;
+    padding: 0 0 15px;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 5px solid;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 5px solid #fff;
+}
+.btn {
+    border: 1px solid #7a33c1;
+    border-radius: 0;
+    color: #7a33c1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #fff;
+    padding: 8px 33px;
+    transition: all .3s ease-in-out;
+}
+.btn:hover {
+    background-color: #7a33c1;
+    color: #fff;
+}
+.padding-bot {
+    padding-bottom: 0;
+}
+.divide20 {
+    margin: 20px 0;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 31px;
+    height: 4px;
+    border-radius: 1px;
+}
+/*
+Max content widths
+*/
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto
+}
+/*
+Header logo
+An example of how to use CSS to display an image as a background of an HTML element.
+*/
+
+#site-title a {
+    display: inline-block;
+    padding: 30px 0 30px 100px;
+    background: url(../img/bst.png) 0 0 no-repeat;
+    background-size: 95px 95px
+}
+#site-title a:hover {
+    background: url(../img/bst-hover.png) 0 0 no-repeat;
+    background-size: 95px 95px;
+    text-decoration: none
+}
+.main-nav {
+    margin-top: 20px
+}
+/*
+Sidebar
+*/
+
+.sidebar ul,
+.sidebar ol {
+    list-style-type: none;
+    padding: 0
+}
+.sidebar li {
+    margin: 10px 0
+}
+/*
+Footer
+*/
+
+.footer ul,
+.footer ol {
+    list-style-type: none;
+    padding: 0
+}
+.footer li {
+    margin: 10px 0
+}
+.sub-footer p {
+    text-align: center
+}
+/*
+Commentlist
+*/
+
+ol.commentlist {
+    counter-reset: li;
+    /* Initiate a counter */
+    
+    padding: 0
+}
+ol.commentlist ul {
+    padding: 0
+}
+ol.commentlist > li {
+    position: relative;
+    margin: 0 0 20px 0;
+    list-style: none
+    /* Disable the normal item numbering */
+}
+ol.commentlist > li:before {
+    content: "Thread " counter(li);
+    /* Use the counter as content */
+    
+    counter-increment: li;
+    /* Increment the counter by 1 */
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom-left-radius: 4px;
+    padding: 5px 20px 5px 10px;
+    color: #999
+}
+ol.commentlist li ol,
+ol.commentlist li ul {
+    list-style-type: none;
+    margin: 0
+}
+.commentlist li li {
+    background: #f8f8f8;
+}
+.commentlist li li li {
+    background: #fff
+}
+.commentlist li li li li {
+    background: #f8f8f8
+}
+.commentlist li li li li li li {
+    background: #fff
+}
+.commentlist li {
+    padding: 20px
+}
+.commentlist ul li {
+    margin-top: 20px;
+    margin-bottom: 0
+}
+.reply p {
+    margin: 0
+}
+/*
+Navbar "hovernav" dropdown menu - this works only for screen sizes larger than phones.
+The Bootstrap CSS is unchanged. If you don't want this, delete this segment of the CSS
+and delete the corresponding segment of bst.js
+*/
+
+@media (min-width: 768px) {
+    .navbar-nav .caret {
+        display: none
+    }
+    /* Delete the above if you wish to display the caret */
+    
+    .navbar-nav .open ul {
+        display: none
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #555;
+        background: none
+    }
+    .navbar-inverse .navbar-nav > .open > a,
+    .navbar-inverse .navbar-nav > .open > a:hover,
+    .navbar-inverse .navbar-nav > .open > a:focus {
+        color: #969696;
+        background: none
+    }
+    .navbar-nav .hovernav:hover > .dropdown-menu {
+        display: block
+    }
+}
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+    .social-foot a {
+        margin-right: 10px;
+    }
+    .nav-buttons {
+        margin-top: 21px;
+    }
+    .nav-buttons .btn {
+        font-size: 10px;
+    }
+}
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    .footer-top .btn {
+        font-size: 10px;
+    }
+    .banner {
+	    height:500px;
+    }
+    .banner-stripe {
+        display: none;
+    }
+    .page-banner-stripe {
+        display: none;
+    }
+    .banner-stripe-mobile {
+        display: block;
+        background-color: #8747C7;
+        color: #F0E0FF;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .page-banner-stripe-mobile {
+        display: block;
+        background-color: #8747C7;
+        color: #F0E0FF;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 15px 0;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+    #content {
+        padding: 20px 0;
+    }
+    .mdivide20 {
+    margin: 40px 0;
+	}
+	.nav-buttons {
+		float:none;
+	}
+
+}
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {}
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    .navbar-default {
+        background-color: rgba(135, 71, 199, 1);
+        border-color: transparent;
+    }
+    .navbar {
+        position: relative;
+    }
+    .navbar-nav {
+        float: none;
+        margin-left: 0;
+        margin: 20.5px 0px;
+    }
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border: 0;
+        box-shadow: none;
+        padding-bottom: 20px;
+    }
+    .banner {
+        height: 450px;
+    }
+    .banner-text {
+        margin-top: 15px;
+    }
+    .banner-stripe {
+        display: none;
+    }
+    .banner-stripe {
+        display: none;
+    }
+    .page-banner {
+        height: 350px;
+    }
+    .page-banner-text {
+        margin-top: 37px;
+    }
+    .footer-top {
+        display: none;
+    }
+}
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+	.banner {
+		height:200px;
+	}
+	.banner-text {
+		display:none;
+	}
+	
+	.navbar-default .navbar-toggle {
+		border-color: transparent;
+		margin-top: 22px;
+		}
+}
