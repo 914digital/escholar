@@ -2,61 +2,37 @@
 <div class="divide40"></div><!-- //divide40 -->
 <?php } else { ?>
 
+
 <div class="wh-stripe">
 <div id="fr-products">
 	<div class="container">
-			<div class="row">
-				<hr />
-				<div class="col-md-4">
-					<span class="sm-title">eScholar</span>
-					<h3>myTrack</h3>
-					<p>eScholar is at the forefront of enabling State Education Agencies and Local Education Agencies to collect and use education data to improve education. Learn More about us by clicking the link</p><br />
-					<a class="btn" href="/solutions/escholar-mytrack/">Learn more</a>
-				</div>
-				<div class="mdivide20"></div><!-- /mdivide20 -->
-				<div class="col-md-4">
-					<span class="sm-title">eScholar</span>
-					<h3>Uniq-ID</h3>
-					<p>Enabling education professionals, as well as parents and students to more effectively manage and use data is our only business. For the last decade, we have exclusively.</p><br />
-					<a class="btn" href="/soultions/escholar-unique-id">Learn more</a>
-				</div>
-				<div class="mdivide20"></div><!-- /mdivide20 -->
-				<div class="col-md-4">
-					<span class="sm-title">eScholar</span>
-					<h3>CDW</h3>
-					<p>We have built an organization of experienced education data management and software professionals on staff, as well as a network of industry.</p><br />
-					<a class="btn" href="/solutions/escholar-complete-data-warehouse/">Learn more</a>
-				</div>
-			</div><!-- /row -->
-		
-			<hr />
-			<div class="row">
-				
-				<div class="col-md-4">
-					<span class="sm-title">eScholar</span>
-					<h3>EDEN/EdFacts</h3>
-					<p>eScholar is at the forefront of enabling State Education Agencies and Local Education Agencies to collect and use education data to improve education. Learn More about us by clicking the link</p><br />
-					<a class="btn" href="/solutions/escholar-edenedfacts-solution/">Learn more</a>
-				</div>
-				<div class="mdivide20"></div><!-- /mdivide20 -->
-				<div class="col-md-4">
-					<span class="sm-title">eScholar</span>
-					<h3>Professional Services</h3>
-					<p>Enabling education professionals, as well as parents and students to more effectively manage and use data is our only business. For the last decade, we have exclusively.</p><br />
-						<a class="btn" href="/solutions/professional-services/">Learn more</a>
-				</div>
-				<div class="mdivide20"></div><!-- /mdivide20 -->
-				<div class="col-md-4">
-					<span class="sm-title">eScholar</span>
-					<h3>Custom Education</h3>
-					<p>We have built an organization of experienced education data management and software professionals on staff, as well as a network of industry.</p><br />
-					<a class="btn" href="/solutions/customer-education/">Learn more</a>
-				</div>
-			</div><!-- /row -->
-	</div><!-- /container -->
+			<div class="row">    <?php
+			                     $fields = CFS()->get('footer',5);
+			                     foreach ($fields as $field) { ?>
+			                     <?php echo '<div class="col-md-4">' ?>
+			                     <?php echo '<span class="sm-title">eScholar</span>' ?>
+			                     <?php echo '<h3>'.$field['product_header'].'</h3>' ?>
+			                     <?php echo '<p>'.$field['product_text'].'</p>' ?>
+			                     <?php echo '<a class="btn" href="'.$field['product_link'].'">Learn more</a>' ?>
+			                     
+			                     
+			                        <?php echo '</div>' ?>
+			                        
+			                          <?php $counter++;
+			                        if ($counter % 3 == 0) {
+			                        echo '</div><hr><div class="row">';
+			                            } ?>
+			                        
+			                    
+			                  <?php   }  ?>
+			
+			</div>
+</div><!-- /container -->
 			</div><!-- /fr-products -->
-</div><!-- /wh-stripe -->			
-<?php } ?>
+</div><!-- /wh-stripe -->	
+
+<?php   }  ?>
+
 
 <div class="footer-top">
 <div class="container">
@@ -64,9 +40,9 @@
    <div class="col-md-4 col-sm-4">
 	   <ul>
 		   <li><a href="/solutions/escholar-mytrack/">eScholar myTrack®</a></li>
-<li><a href="/solutions/escholar-complete-data-warehouse/">eScholar Complete Data Warehouse®</a></li>
-<li><a href="/soultions/escholar-unique-id">eScholar Uniq-ID®</a></li>
-<li><a href="/solutions/escholar-edenedfacts-solution/">EDEN/EdFacts Solution</a></li>
+<li><a href="/solutions/escholar-complete-data-warehouse">eScholar Complete Data Warehouse®</a></li>
+<li><a href="/soultions/escholar-uniq-id">eScholar Uniq-ID®</a></li>
+<li><a href="/solutions/eden-edfacts/">EDEN/EdFacts Solution</a></li>
 <li><a href="/solutions/professional-services/">Professional Services</a></li>
 <li><a href="/solutions/customer-education/">Customer Education</a></li>
 	   </ul>
