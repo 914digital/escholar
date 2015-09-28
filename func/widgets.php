@@ -9,7 +9,7 @@ function bst_widgets_init() {
         'name' => __( 'Sidebar', 'bst' ),
         'id' => 'sidebar-widget-area',
         'description' => __( 'The sidebar widget area', 'bst' ),
-        'before_widget' => '<section class="%1$s %2$s">',
+        'before_widget' => '<section class="%1$s %2$s widgetst">',
         'after_widget' => '</section>',
         'before_title' => '<h3>',
         'after_title' => '</h3>',

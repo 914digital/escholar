@@ -48,7 +48,7 @@ register_nav_menu('upper-bar', __('Screen-top menu'));
           );
           wp_nav_menu($args);
       ?>
-       <div class="nav-buttons"><a class="btn" href="#">Schedule A Demo</a> <a class="btn nvbtn" href="#">Contact Sales</a></div><!-- /nav-buttons -->
+       <div class="nav-buttons"><a class="btn" href="schedule-a-demo">Schedule A Demo</a> <a class="btn nvbtn" href="/contact-sales">Contact Sales</a></div><!-- /nav-buttons -->
 <div class="clearfix"></div>
 	  </div><!-- /.navbar-collapse -->
 	 

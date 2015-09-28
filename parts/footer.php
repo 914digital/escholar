@@ -1,3 +1,6 @@
+<?php if(is_page(7)){ ?>
+<div class="divide40"></div><!-- //divide40 -->
+<?php } else { ?>
 
 <div class="wh-stripe">
 <div id="fr-products">
@@ -53,7 +56,7 @@
 	</div><!-- /container -->
 			</div><!-- /fr-products -->
 </div><!-- /wh-stripe -->			
-
+<?php } ?>
 
 <div class="footer-top">
 <div class="container">
@@ -87,8 +90,8 @@
 	   </ul>
    </div><!-- /col-md-3 -->
    <div class="col-md-2 col-sm-3">
-	   <a class="btn" href="#">Schedule a demo</a><br /><br />
-	   <a class="btn" href="#">Contact Sales</a><br /><br />
+	   <a class="btn" href="/schedule-a-demo">Schedule a demo</a><br /><br />
+	   <a class="btn" href="/contact-sales">Contact Sales</a><br /><br />
 	   <div class="social-foot">
 		   <a href="https://www.facebook.com/eScholar.eddata" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
 		   <a href="https://twitter.com/eScholar" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>

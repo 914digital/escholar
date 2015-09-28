@@ -1,5 +1,5 @@
 <?php get_template_part('parts/header'); ?>
-<div class="page-banner">
+<div class="page-banner" style="background-image:url('<?php echo CFS()->get('interior_banner'); ?>');">
 	<div class="page-banner-stripe">
 		<div class="container">
 			<div class="row">

@@ -2,25 +2,24 @@
 
 <?php get_template_part('parts/header'); ?>
 
-<div class="banner">
+<div class="banner" style="background-image:url('<?php echo CFS()->get('banner_image'); ?>');">
 	<div class="banner-stripe">
 		<div class="container">
 			<div class="row">
     <div class="col-md-4">
-	    <h3>Who We Are</h3>
-	    <p>eScholar is at the forefront of enabling State Education Agencies and Local Education Agencies to collect and use education data to improve education</p><br />
-	    <a class="btn" href="#">Learn more</a>
+	    <h3><?php echo CFS()->get('banner_stripe_header_1'); ?></h3>
+	    <p><?php echo CFS()->get('banner_stripe_text_1'); ?></p><br />
+	    <a class="btn" href="<?php echo CFS()->get('banner_stripe_button_link_1'); ?>"><?php echo CFS()->get('banner_stripe_button_copy_1'); ?></a>
     </div><!-- /col-md-4 -->
      <div class="col-md-4">
-	      <h3>What We Do</h3>
-	    <p>Enabling education professionals, as well as parents and students to more effectively manage and use data is our only business. For the last decade, we have exclusively.
-</p><br />
-	      <a class="btn" href="#">Learn more</a>
+	        <h3><?php echo CFS()->get('banner_stripe_header_2'); ?></h3>
+	    <p><?php echo CFS()->get('banner_stripe_text_2'); ?></p><br />
+	    <a class="btn" href="<?php echo CFS()->get('banner_stripe_button_link_2'); ?>"><?php echo CFS()->get('banner_stripe_button_copy_2'); ?></a>
      </div><!-- /col-md-4 -->
       <div class="col-md-4">
-	       <h3>Why Choose Us</h3>
-	    <p>We have built an organization of experienced education data management and software professionals on staff, as well as a network of industry.</p><br />
-	      <a class="btn" href="#">Learn more</a>
+	        <h3><?php echo CFS()->get('banner_stripe_header_3'); ?></h3>
+	    <p><?php echo CFS()->get('banner_stripe_text_3'); ?></p><br />
+	    <a class="btn" href="<?php echo CFS()->get('banner_stripe_button_link_3'); ?>"><?php echo CFS()->get('banner_stripe_button_copy_3'); ?></a>
       </div><!-- /col-md-4 -->
 </div><!-- /.row -->
 </div><!-- /.container -->
@@ -35,10 +34,10 @@
     
      <div class="col-md-6">
 	      <div class="banner-text">
-	     <h2>Personalized education starts at eScholar</h2>
-	     <p>Enabling education professionals, as well as parents and students to more effectively manage and use data is our only business. For the last decade, we have exclusively focused on delivering solutions which enable...
+	     <h2><?php echo CFS()->get('banner_text_header'); ?></h2>
+	     <p><?php echo CFS()->get('banner_text_copy'); ?>
 	     </p>
-	     <a class="btn" href="#">Learn More</a>
+	     <a class="btn" href="<?php echo CFS()->get('banner_text_button_link'); ?>"><?php echo CFS()->get('banner_text_button_copy'); ?></a>
 	     </div><!-- /banner-text -->
      </div><!-- /.col-md-6 -->
   </div><!-- /.row -->
@@ -49,22 +48,22 @@
 		<div class="container">
 			<div class="row">
     <div class="col-md-4">
-	    <h3>Who We Are</h3>
-	    <p>eScholar is at the forefront of enabling State Education Agencies and Local Education Agencies to collect and use education data to improve education</p><br />
-	    <a class="btn" href="#">Learn more</a>
+	    <h3><?php echo CFS()->get('banner_stripe_header_1'); ?></h3>
+	    <p><?php echo CFS()->get('banner_stripe_text_1'); ?></p><br />
+	    <a class="btn" href="<?php echo CFS()->get('banner_stripe_button_link_1'); ?>"><?php echo CFS()->get('banner_stripe_button_copy_1'); ?></a>
     </div><!-- /col-md-4 -->
     <div class="mdivide20"></div><!-- /mdivide20 -->
     <div class="col-md-4">
-	      <h3>What We Do</h3>
-	    <p>Enabling education professionals, as well as parents and students to more effectively manage and use data is our only business. For the last decade, we have exclusively.
-</p><br />
-	      <a class="btn" href="#">Learn more</a>
+	     <h3><?php echo CFS()->get('banner_stripe_header_2'); ?></h3>
+	    <p><?php echo CFS()->get('banner_stripe_text_2'); ?></p><br />
+	    <a class="btn" href="<?php echo CFS()->get('banner_stripe_button_link_2'); ?>"><?php echo CFS()->get('banner_stripe_button_copy_2'); ?></a>
      </div><!-- /col-md-4 -->
       <div class="mdivide20"></div><!-- /mdivide20 -->
        <div class="col-md-4">
-	       <h3>Why Choose Us</h3>
-	    <p>We have built an organization of experienced education data management and software professionals on staff, as well as a network of industry.</p><br />
-	      <a class="btn" href="#">Learn more</a>
+	       <h3><?php echo CFS()->get('banner_stripe_header_3'); ?></h3>
+	    <p><?php echo CFS()->get('banner_stripe_text_3'); ?></p><br />
+	    <a class="btn" href="<?php echo CFS()->get('banner_stripe_button_link_3'); ?>"><?php echo CFS()->get('banner_stripe_button_copy_3'); ?></a>
+
       </div><!-- /col-md-4 -->
 </div><!-- /.row -->
 </div><!-- /.container -->
@@ -75,12 +74,12 @@
 		<div class="container">
 			<div class="row">
     <div class="col-md-6">
-	    <h4>Our Focus</h4>
-	    <p>Why eScholar?eScholar is at the forefront of enabling State Education Agencies (SEAs) and Local Education Agencies (LEAs) to collect and use education data to improve education outcomes. With the largest number of SEA implementations.</p><br />
-	    <a class="btn" href="#">Learn more</a>
+	    <h4><?php echo CFS()->get('row_1_header'); ?></h4>
+	    <p><?php echo CFS()->get('row_1_text'); ?></p><br />
+	    <a class="btn" href="<?php echo CFS()->get('row_1_link'); ?>"><?php echo CFS()->get('row_1_button_copy'); ?></a>
     </div><!-- /col-md-6 -->
      <div class="mdivide20"></div><!-- /mdivide20 -->
-    <div class="col-md-6"><img src="<?php bloginfo('template_directory') ?>/img/map.png"></div><!-- /col-md-6 -->
+    <div class="col-md-6"><img src="<?php echo CFS()->get('row_1_image'); ?>"></div><!-- /col-md-6 -->
  </div><!-- /.row -->
  </div><!-- /.container -->
 </div><!-- /wh-stripe -->
@@ -88,11 +87,11 @@
 <div class="gr-stripe">
 	<div class="container">
 			<div class="row">
-    <div class="col-md-6"><img src="<?php bloginfo('template_directory') ?>/img/fifteen.png"></div>
+    <div class="col-md-6"><img src="<?php echo CFS()->get('row_2_image'); ?>"></div>
      <div class="mdivide20"></div><!-- /mdivide20 -->
-     <div class="col-md-6"><h4>Experience and Expertise</h4>
-     <p>We have built an organization of experienced education data management and software professionals on staff, as well as a network of industry leading systems integrators and partners who understand the challenges and issues associated with the collection, integration and management of education.</p><br />
-      <a class="btn" href="#">Learn more</a>
+     <div class="col-md-6"><h4><?php echo CFS()->get('row_2_header'); ?></h4>
+     <p><?php echo CFS()->get('row_2_text'); ?></p><br />
+      <a class="btn" href="<?php echo CFS()->get('row_2_link'); ?>"><?php echo CFS()->get('row_2_button_copy'); ?></a>
      </div>
  </div><!-- /.row -->
  </div><!-- /container -->
@@ -103,9 +102,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2"></div><!-- /col-md-2 -->
-					<div class="col-md-8"><h1>PROVEN SOFTWARE PRODUCTS</h1>
-										<p>In today’s world, taking a chance on custom solutions or unproven products is not something that educators can afford – our commercial-off-the-shelf (COTS) solutions are supporting over 20 million students in states and districts across the country.</p><br />
-										<a class="btn" href="#">Learn more</a></div><!-- /col-md-8 -->
+					<div class="col-md-8"><h1><?php echo CFS()->get('row_3_header'); ?></h1>
+										<p><?php echo CFS()->get('row_3_text'); ?></p><br />
+										<a class="btn" href="<?php echo CFS()->get('row_3_link'); ?>"><?php echo CFS()->get('row_3_button_copy'); ?></a></div><!-- /col-md-8 -->
 				
 				<div class="col-md-2"></div><!-- /col-md-2 -->
 			</div><!-- /row -->		

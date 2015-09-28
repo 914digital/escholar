@@ -20,18 +20,18 @@ a:hover, a:focus {
     margin-top: 16px;
 }
 .nav-buttons .btn {
-    border: 1px solid #c09ce4;
+   border: 0;
     border-radius: 0;
-    color: #c09ce4;
+    color: #50217e;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-color: #7a33c1;
+    background-color: #fff;
     padding: 8px 12px;
     transition: all .3s ease-in-out;
 }
 .nav-buttons .btn:hover {
-    background-color: #c09ce4;
-    color: #7a33c1;
+    background-color: #50217e;
+    color: #fff;
 }
 .nav-buttons .btn:first-child {
     margin-right: 7px;
@@ -153,6 +153,11 @@ a:hover, a:focus {
 	margin-top: 40px;
 }
 
+.main-content h3:nth-child(1) {
+	margin-top:0;
+	
+}
+
 .page-banner-stripe-mobile {
     display: none;
 }
@@ -247,6 +252,37 @@ a:hover, a:focus {
 .social-foot a {
     margin-right: 15px;
 }
+
+.social-sb {
+   
+}
+.social-sb a {
+    margin-right: 15px;
+}
+
+.blog {
+	position:relative;
+	top:60px;
+}
+
+.blog-int {
+	padding:120px 0;
+}
+
+.widgetst {
+	background-color: #eee;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.widgetst h3 {
+	margin-top: 0;
+    background-color: #50217e;
+    padding: 10px;
+    color: #fff;
+    margin: -10px -10px 15px;
+}
+
 /*
 Bootstrap Styles --------------------------->
 */
@@ -331,6 +367,28 @@ Bootstrap Styles --------------------------->
     height: 4px;
     border-radius: 1px;
 }
+
+.pagination>li>a, .pagination>li>span {
+	color:#50217e;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+	color:#50217e;
+}
+
+
+.alert-info {
+    color: #fff;
+    background-color: #955ACE;
+    border-color: transparent;
+}
+
+.divide40 {
+	margin:40px 0;
+}
+
+
+
 /*
 Max content widths
 */
