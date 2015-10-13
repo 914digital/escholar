@@ -68,7 +68,8 @@
 </div><!-- /.row -->
 </div><!-- /.container -->
 	</div><!-- /banner-stripe-mobile -->
-
+	
+	
 
 <div class="wh-stripe">
 		<div class="container">

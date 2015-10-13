@@ -33,6 +33,54 @@
 
 <?php   }  ?>
 
+<div class="gr-stripe-news">
+		<div class="container">
+			<div class="row">
+		
+			<div class="col-md-6">
+				
+				
+				<h3>Recent News</h3>
+				
+				<?php $fields = CFS()->get('recent_news');
+					foreach ($fields as $field) { ?>
+						<?php echo '<div class="row"><a href="'.$field['news_link'].'"><div class="col-xs-2"><img src="'.$field['news_image'].'"/></div>' ?>
+					    <?php echo '<div class="col-md-10"><h4>'.$field['news_title'].'</h4><p>'.$field['news_text'].'</p></div>' ?>
+							      <?php echo '</a></div>' ?>
+							                  <?php   }  ?>
+				
+
+				
+			</div><!-- /col-md-6  -->
+		
+		<div class="col-md-2">
+		</div><!-- /col-md-2  -->
+		
+			<div class="col-md-4">
+				
+				<h3>Upcoming Webinars</h3>
+				
+				<?php $fields = CFS()->get('webinars');
+					foreach ($fields as $field) { ?>
+						<?php echo '<a href="'.$field['webinar_link'].'">' ?>
+					    <?php echo '<h4>'.$field['webinar_title'].'</h4><div class="btn reg-btn">'.$field['webinar_text'].'</div>' ?>
+							      <?php echo '</a><div class="clearfix"></div>' ?>
+							                  <?php   }  ?>
+
+				
+				
+				
+				
+				
+				
+			</div><!-- /col-md-4  -->
+			
+		
+			</div>
+		</div>
+	</div><!-- /recent-news -->
+
+
 
 <div class="footer-top">
 <div class="container">

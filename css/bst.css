@@ -290,6 +290,35 @@ a:hover, a:focus {
     margin: -10px -10px 15px;
 }
 
+.recent-news {
+	
+}
+
+
+.gr-stripe-news {
+	background-color: #f2eff4;
+    padding: 40px 0;
+}
+
+.gr-stripe-news a {
+	display:inline-block;
+	padding:10px;
+	border-bottom:1px dotted;
+	transition:all .3s ease-in-out;
+}
+
+.gr-stripe-news a:hover {
+	background-color: #BD83F7;
+    color: #fff;
+    text-decoration: none;
+}
+
+.gr-stripe-news h4 {
+	font-size: 14px;
+    margin-top: 0;
+}
+
+
 /*
 Bootstrap Styles --------------------------->
 */
@@ -393,6 +422,13 @@ Bootstrap Styles --------------------------->
 .divide40 {
 	margin:40px 0;
 }
+
+.reg-btn {
+	background-color: transparent;
+    padding: 5px 10px;
+    font-size:12px;
+}
+
 
 
 
