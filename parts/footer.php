@@ -138,5 +138,8 @@
 </div><!-- /container -->
 </div><!-- /footer-bot -->
 <?php wp_footer(); ?>
+<!-- Start of Leadin Embed -->
+<script type="text/javascript" src="//js.leadin.com/js/v1/1711949.js" id="LeadinEmbed-1711949" crossorigin="use-credentials" async defer></script>
+<!-- End of Leadin Embed -->
 </body>
 </html>
