@@ -67,7 +67,6 @@ function bst_browser_body_class( $classes ) {
 }
 add_filter( 'body_class', 'bst_browser_body_class' );
 
-add_theme_support( 'woocommerce' );
 
 function my_login_logo() { ?>
     <style type="text/css">
@@ -80,9 +79,13 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
-// changing the login page URL
-    function put_my_url(){
-    return ('/'); // putting my URL in place of the WordPress one
-}
-    add_filter('login_headerurl', 'put_my_url');
 
+ 
+function mod_author( $query ) {
+    if ( !is_admin() && $query->is_author() && $query->is_main_query() ) {
+       $query->set( 'cat', '4' );
+    }
+}
+add_action( 'pre_get_posts', 'mod_author' );
+
+?>

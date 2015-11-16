@@ -7,10 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/img/favicon.png" />
 	<?php wp_head(); ?>
-</head>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=230193873669864";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	</head>
 
 <body <?php body_class(); ?>>
-
+<div class="max-width">
 <!--[if lt IE 8]>
 <div class="alert alert-warning">
 	You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
@@ -48,7 +56,14 @@ register_nav_menu('upper-bar', __('Screen-top menu'));
           );
           wp_nav_menu($args);
       ?>
-       <div class="nav-buttons"><a class="btn" href="schedule-a-demo">Schedule A Demo</a> <a class="btn nvbtn" href="/contact-sales">Contact Sales</a></div><!-- /nav-buttons -->
+       <div class="nav-buttons"><a class="btn" href="schedule-a-demo">Schedule A Demo</a> <a class="btn nvbtn" href="/contact-sales">Contact Us</a>
+        <div class="social-top">
+		   <a href="https://twitter.com/eScholar" target="_blank"><i class="fa fa-twitter"></i></a>
+		   <a href="http://www.linkedin.com/company/escholar" target="_blank"><i class="fa fa-linkedin"></i></a>
+		   <a href="https://www.youtube.com/user/escholarLLC?feature=watch" target="_blank"><i class="fa fa-youtube"></i></a>
+        </div><!-- /social-top -->
+        </div><!-- /nav-buttons -->
+        
 <div class="clearfix"></div>
 	  </div><!-- /.navbar-collapse -->
 	 

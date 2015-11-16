@@ -1,121 +1,47 @@
 <?php if(is_page(7)){ ?>
 <div class="divide40"></div><!-- //divide40 -->
 <?php } else { ?>
-
-
 <div class="wh-stripe">
 <div id="fr-products">
 	<div class="container">
-			<div class="row">    <?php
-			                     $fields = CFS()->get('footer',5);
-			                     foreach ($fields as $field) { ?>
-			                     <?php echo '<div class="col-md-4">' ?>
-			                     <?php echo '<span class="sm-title">eScholar</span>' ?>
-			                     <?php echo '<h3>'.$field['product_header'].'</h3>' ?>
-			                     <?php echo '<p>'.$field['product_text'].'</p>' ?>
-			                     <?php echo '<a class="btn" href="'.$field['product_link'].'">Learn more</a>' ?>
-			                     
-			                     
-			                        <?php echo '</div>' ?>
+			<div class="row">    
+<?php
+$fields = CFS()->get('footer',5);
+foreach ($fields as $field) { ?>
+	<?php echo '<div class="col-md-4">' ?>
+	<?php echo '<span class="sm-title">eScholar</span>' ?>
+	<?php echo '<h3>'.$field['product_header'].'</h3>' ?>
+	<?php echo '<p>'.$field['product_text'].'</p>' ?>
+	<?php echo '<a class="btn" href="'.$field['product_link'].'">Learn more</a>' ?>
+	<?php echo '<hr class="mobileonly"></div>' ?>
 			                        
-			                          <?php $counter++;
-			                        if ($counter % 3 == 0) {
-			                        echo '</div><hr><div class="row">';
-			                            } ?>
-			                        
+	<?php $counter++;
+	if ($counter % 3 == 0) {
+	echo '</div><hr class="desktoponly"><div class="row">';
+	} ?>                      
 			                    
-			                  <?php   }  ?>
+<?php   }  ?>
+
 			
-			</div>
-</div><!-- /container -->
-			</div><!-- /fr-products -->
+			</div><!-- /row -->
+	</div><!-- /container -->
+</div><!-- /fr-products -->
 </div><!-- /wh-stripe -->	
 
 <?php   }  ?>
 
-<div class="gr-stripe-news">
-		<div class="container">
-			<div class="row">
-		
-			<div class="col-md-6">
-				
-				
-				<h3>Recent News</h3>
-				
-				<?php $fields = CFS()->get('recent_news');
-					foreach ($fields as $field) { ?>
-						<?php echo '<div class="row"><a href="'.$field['news_link'].'"><div class="col-xs-2"><img src="'.$field['news_image'].'"/></div>' ?>
-					    <?php echo '<div class="col-md-10"><h4>'.$field['news_title'].'</h4><p>'.$field['news_text'].'</p></div>' ?>
-							      <?php echo '</a></div>' ?>
-							                  <?php   }  ?>
-				
-
-				
-			</div><!-- /col-md-6  -->
-		
-		<div class="col-md-2">
-		</div><!-- /col-md-2  -->
-		
-			<div class="col-md-4">
-				
-				<h3>Upcoming Webinars</h3>
-				
-				<?php $fields = CFS()->get('webinars');
-					foreach ($fields as $field) { ?>
-						<?php echo '<a href="'.$field['webinar_link'].'">' ?>
-					    <?php echo '<h4>'.$field['webinar_title'].'</h4><div class="btn reg-btn">'.$field['webinar_text'].'</div>' ?>
-							      <?php echo '</a><div class="clearfix"></div>' ?>
-							                  <?php   }  ?>
-
-				
-				
-				
-				
-				
-				
-			</div><!-- /col-md-4  -->
-			
-		
-			</div>
-		</div>
-	</div><!-- /recent-news -->
 
 
 
 <div class="footer-top">
 <div class="container">
 	<div class="row">
-   <div class="col-md-4 col-sm-4">
-	   <ul>
-		   <li><a href="/solutions/escholar-mytrack/">eScholar myTrack®</a></li>
-<li><a href="/solutions/escholar-complete-data-warehouse">eScholar Complete Data Warehouse®</a></li>
-<li><a href="/soultions/escholar-uniq-id">eScholar Uniq-ID®</a></li>
-<li><a href="/solutions/eden-edfacts/">EDEN/EdFacts Solution</a></li>
-<li><a href="/solutions/professional-services/">Professional Services</a></li>
-<li><a href="/solutions/customer-education/">Customer Education</a></li>
-	   </ul>
-   </div><!-- /col-md-3 -->
-   <div class="col-md-3 col-sm-3">
-	   <ul>
-		   <li><a href="/company/leadership">Leadership</a></li>
-<li><a href="/company/news-events">News and Events</a></li>
-<li><a href="/company/security-privacy">Security and Privacy</a></li>
-<li><a href="/company/our-customers">Our Customers</a></li>
-<li><a href="/company/working-at-escholar">Working at eScholar</a></li>
-	   </ul>
-   </div><!-- /col-md-3 -->
-   <div class="col-md-3 col-sm-2">
-	   <ul>
-		  <li><strong><a href="#">Home</a></strong></li>   
-<li><strong><a href="/solutions">Solutions</a></strong></li>     
-<li><strong><a href="/company">Company</a></strong></li>  
-<li><strong><a href="/support">Support</a></strong></li>  
-<li><strong><a href="/blog">Blog</a></strong></li>  
-	   </ul>
-   </div><!-- /col-md-3 -->
+		<div class="col-md-9">
+			<?php wp_nav_menu( array( 'theme_location' => 'upper-bar' ) ); ?>
+      </div><!-- /col-md-9 -->
    <div class="col-md-2 col-sm-3">
 	   <a class="btn" href="/schedule-a-demo">Schedule a demo</a><br /><br />
-	   <a class="btn" href="/contact-sales">Contact Sales</a><br /><br />
+	   <a class="btn" href="/contact-sales">Contact Us</a><br /><br />
 	   <div class="social-foot">
 		   <a href="https://www.facebook.com/eScholar.eddata" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
 		   <a href="https://twitter.com/eScholar" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
@@ -137,9 +63,7 @@
   </div><!-- /row -->
 </div><!-- /container -->
 </div><!-- /footer-bot -->
+</div><!-- /max-width -->
 <?php wp_footer(); ?>
-<!-- Start of Leadin Embed -->
-<script type="text/javascript" src="//js.leadin.com/js/v1/1711949.js" id="LeadinEmbed-1711949" crossorigin="use-credentials" async defer></script>
-<!-- End of Leadin Embed -->
 </body>
 </html>

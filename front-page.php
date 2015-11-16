@@ -1,8 +1,15 @@
-
-
 <?php get_template_part('parts/header'); ?>
 
 <div class="banner" style="background-image:url('<?php echo CFS()->get('banner_image'); ?>');">
+	<div class="web-stripe desktoponly">
+	<div class="container">
+	  <div class="row">
+	 <div class="col-md-12"><span class="web-stripe-text"><i class="fa fa-wifi fa-2x"></i><strong>Upcoming Webinar:</strong> <?php echo CFS()->get('upcoming_webinar_text'); ?><a class="btn" href="<?php echo CFS()->get('upcoming_webinar_link'); ?>">Register</a></span><span class="border-right"></span></div><!-- /col-md-12 -->
+	
+		</div><!-- /row -->
+	</div><!-- /container -->
+	</div><!-- /web-stripe -->
+	
 	<div class="banner-stripe">
 		<div class="container">
 			<div class="row">
@@ -35,10 +42,9 @@
      <div class="col-md-6">
 	      <div class="banner-text">
 	     <h2><?php echo CFS()->get('banner_text_header'); ?></h2>
-	     <p><?php echo CFS()->get('banner_text_copy'); ?>
+	   <p><?php echo CFS()->get('banner_text_copy'); ?>
 	     </p>
-	     <a class="btn" href="<?php echo CFS()->get('banner_text_button_link'); ?>"><?php echo CFS()->get('banner_text_button_copy'); ?></a>
-	     </div><!-- /banner-text -->
+	   	     </div><!-- /banner-text -->
      </div><!-- /.col-md-6 -->
   </div><!-- /.row -->
 </div><!-- /.container -->
@@ -80,7 +86,7 @@
 	    <a class="btn" href="<?php echo CFS()->get('row_1_link'); ?>"><?php echo CFS()->get('row_1_button_copy'); ?></a>
     </div><!-- /col-md-6 -->
      <div class="mdivide20"></div><!-- /mdivide20 -->
-    <div class="col-md-6"><img src="<?php echo CFS()->get('row_1_image'); ?>"></div><!-- /col-md-6 -->
+    <div class="col-md-6"><a href="<?php echo CFS()->get('row_1_link'); ?>"><img src="<?php echo CFS()->get('row_1_image'); ?>"></a></div><!-- /col-md-6 -->
  </div><!-- /.row -->
  </div><!-- /.container -->
 </div><!-- /wh-stripe -->
@@ -88,7 +94,7 @@
 <div class="gr-stripe">
 	<div class="container">
 			<div class="row">
-    <div class="col-md-6"><img src="<?php echo CFS()->get('row_2_image'); ?>"></div>
+    <div class="col-md-6"><a href="<?php echo CFS()->get('row_2_link'); ?>"><img src="<?php echo CFS()->get('row_2_image'); ?>"></a></div>
      <div class="mdivide20"></div><!-- /mdivide20 -->
      <div class="col-md-6"><h4><?php echo CFS()->get('row_2_header'); ?></h4>
      <p><?php echo CFS()->get('row_2_text'); ?></p><br />
@@ -98,14 +104,27 @@
  </div><!-- /container -->
 </div><!-- /gr-stripe -->
 
+<div class="wh-stripe testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h4>What Our Clients Are Saying</h4>
+					<p><?php echo CFS()->get('testimonial_copy'); ?></p>
+	    </div><!-- /col-md-6 -->
+    <div class="col-md-6"><img src="<?php echo CFS()->get('testimonial_image'); ?>" />
+	    </div><!-- /col-md-6 -->
+ </div><!-- /.row -->
+ </div><!-- /.container -->
+</div><!-- /wh-stripe -->
 
-<div class="wh-stripe padding-bot">
+<hr />
+<div class="wh-stripe">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2"></div><!-- /col-md-2 -->
 					<div class="col-md-8"><h1><?php echo CFS()->get('row_3_header'); ?></h1>
 										<p><?php echo CFS()->get('row_3_text'); ?></p><br />
-										<a class="btn" href="<?php echo CFS()->get('row_3_link'); ?>"><?php echo CFS()->get('row_3_button_copy'); ?></a></div><!-- /col-md-8 -->
+										</div><!-- /col-md-8 -->
 				
 				<div class="col-md-2"></div><!-- /col-md-2 -->
 			</div><!-- /row -->		
