@@ -52,6 +52,9 @@ function bst_enqueues()
     
     wp_register_script('wow-js', get_template_directory_uri() . '/js/wow.js', false, null, true);
     wp_enqueue_script('wow-js');
+    
+     wp_register_script('newsTicker-js', get_template_directory_uri() . '/js/jquery.newsTicker.min.js', false, null, true);
+    wp_enqueue_script('newsTicker-js');
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');

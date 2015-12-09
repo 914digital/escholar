@@ -1,11 +1,11 @@
 <?php get_template_part('parts/header'); ?>
-<div class="page-banner" style="background-image:url('<?php echo CFS()->get('interior_banner'); ?>');">
+<div class="page-banner desktoponly" style="background-image:url('<?php echo CFS()->get('interior_banner'); ?>');">
 	<div class="page-banner-stripe">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2"></div><!-- /col-md- -->
 				<div class="col-md-8">
-					<h3><?php echo CFS()->get('banner_header'); ?></h3>
+					<h1><?php echo CFS()->get('banner_header'); ?></h1>
 					<p><?php echo CFS()->get('banner_text'); ?> </p>
 									</div><!-- /col-md- -->
 				<div class="col-md-2"></div><!-- /col-md- -->
@@ -16,6 +16,7 @@
 	</div><!-- /banner -->
 
 <div class="page-banner-stripe-mobile">
+<img class="img-responsive" src="<?php echo CFS()->get('interior_banner'); ?>" alt="<?php the_title(); ?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2"></div><!-- /col-md- -->

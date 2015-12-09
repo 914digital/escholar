@@ -4,13 +4,13 @@ Template Name: News
 */
 ?>
 <?php get_template_part('parts/header'); ?>
-<div class="page-banner" style="background-image:url('<?php echo CFS()->get('interior_banner'); ?>');">
+<div class="page-banner desktoponly" style="background-image:url('<?php echo CFS()->get('interior_banner'); ?>');">
 	<div class="page-banner-stripe">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2"></div><!-- /col-md- -->
 				<div class="col-md-8">
-					<h3><?php echo CFS()->get('banner_header'); ?></h3>
+					<h1><?php echo CFS()->get('banner_header'); ?></h1>
 					<p><?php echo CFS()->get('banner_text'); ?> </p>
 									</div><!-- /col-md- -->
 				<div class="col-md-2"></div><!-- /col-md- -->
@@ -21,6 +21,7 @@ Template Name: News
 	</div><!-- /banner -->
 
 <div class="page-banner-stripe-mobile">
+<img class="img-responsive" src="<?php echo CFS()->get('interior_banner'); ?>" alt="<?php the_title(); ?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2"></div><!-- /col-md- -->
@@ -61,7 +62,9 @@ Template Name: News
 				  </div><!-- /col-md-3 -->
 					<div class="col-md-9">
 						<div class="news-title">
-							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+							<a href="<?php the_permalink(); ?>"><?php the_title(); ?> <span class="pull-right"><br />Read more <strong><i class="glyphicon glyphicon-arrow-right"></i></strong></span>
+							<div class="clearfix"></div>
+							</a>
 						</div><!-- /news-title -->
 					</div><!-- /col-md-9 -->
 				 </div><!-- /.row -->

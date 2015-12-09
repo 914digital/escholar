@@ -10,7 +10,7 @@
             <h2><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h2>
             <h4>
               
-                <span class="text-muted" class="author">By <?php the_author_posts_link(); ?></span><br />
+                <span class="text-muted author">By <?php the_author_posts_link(); ?></span><br />
                
               
             </h4>

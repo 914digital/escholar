@@ -3,7 +3,7 @@
 <div class="container">
 <div class="row">
 <div class="col-md-12">       
-<a href="/category/blog">Blog</a>
+<h1><a href="/category/blog">Blog</a></h1>
 </div><!--// col-md-12 -->  
 </div><!--// row -->  
 </div><!--// container -->  
@@ -16,7 +16,7 @@
 <article role="article" id="post_<?php the_ID()?>">
 <header>
 <h2><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h2>
-<h4><span class="text-muted" class="author">By <?php the_author_posts_link(); ?></span><br /></h4>
+<h4><span class="text-muted author">By <?php the_author_posts_link(); ?></span><br /></h4>
 </header>
 <?php the_excerpt(); ?>
 <p>Posted:  <time  class="text-muted" datetime="<?php the_time('d-m-Y')?>"><?php the_time('F jS Y') ?></time></p>
