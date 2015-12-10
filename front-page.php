@@ -112,7 +112,7 @@
  </div><!-- /.container -->
 </div><!-- /wh-stripe -->
 
-<hr />
+
 <div class="wh-stripe proven">
 		<div class="container">
 			<div class="row">
@@ -126,6 +126,10 @@
 	</div><!-- /container -->
 	</div><!-- /wh-stripe -->
 </div><!-- /desktoponly -->
+
+
+
+<!-- ***************************************  Mobile Only *************************************** -->
 <div class="mobileonly">
 <div class="web-stripe-mobile text-center">
 			<div class="page-banner-stripe-mobile">
@@ -134,8 +138,10 @@
 			<div class="row">
 				<div class="col-md-2"></div><!-- /col-md- -->
 				<div class="col-md-8">
+				<div class="block1">	
 					<h3><?php echo CFS()->get('banner_text_header'); ?></h3>
 					<p><?php echo CFS()->get('banner_text_copy'); ?> </p>
+				</div>
 									</div><!-- /col-md- -->
 				<div class="col-md-2"></div><!-- /col-md- -->
 			</div><!-- /row -->
@@ -150,13 +156,15 @@
    
 	
 	  <div class="row">
-	 <div class="col-md-12">  
+	 <div class="col-md-12"> 
+<div class="block2">	 
 <h3>News & Events</h3>
 															
 <?php $fields = CFS()->get('news_ticker_loop');
 foreach ($fields as $field) { ?>
 <?php echo '<div class="item"><a class="web-stripe-text-mobile" href="'.$field['ticker_link'].'" >'.$field['ticker_text'].'</a></div>' ?>
 <?php   }  ?>
+</div>
 	</div><!-- /col-md-12 -->
 		
 					
@@ -182,13 +190,15 @@ foreach ($fields as $field) { ?>
 
        <div class="col-md-4">
 	       <h3><?php echo CFS()->get('banner_stripe_header_3'); ?></h3>
-	    <p><?php echo CFS()->get('banner_stripe_text_3'); ?></p><br />
+	    <p><?php echo CFS()->get('banner_stripe_text_3'); ?></p>
 
 
       </div><!-- /col-md-4 -->
 </div><!-- /.row -->
 </div><!-- /.container -->
 	</div><!-- /banner-stripe-mobile -->
+	
+<div class="block4">	 	
 			<div class="container">	
 		<div class="row">
 		<div class="col-md-4"><h3><a href="<?php echo CFS()->get('row_1_link'); ?>"><?php echo CFS()->get('row_1_header'); ?></a></h3>
@@ -213,6 +223,7 @@ foreach ($fields as $field) { ?>
 		</div><!--// row -->     
 		
 	</div><!-- /container -->
+</div>
 	</div><!-- /web-stripe -->
 
 

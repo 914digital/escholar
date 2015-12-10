@@ -105,7 +105,7 @@ h3 {
 }
 .banner-stripe {
     background-color: rgba(255, 255, 255, 0.78);
-    padding: 5px 0;
+    padding: 0 0 6px 0;
     position: absolute;
     top: 470px;
     bottom: 0;
@@ -200,7 +200,7 @@ h3 {
 .wh-stripe {
     background-color: #fff;
     text-align: center;
-    padding: 40px 0;
+    padding: 40px 0 30px 0;
 }
 .wh-stripe h1 {
     color: #955DCD;
@@ -237,8 +237,9 @@ h3 {
 }
 
 #fr-products {
-	margin-top: 30px;
+    margin-top: 30px;
     border-top: 1px solid #eee;
+    text-align: center;
 }
 
 #fr-products h2 {
@@ -246,7 +247,7 @@ h3 {
     font-weight: 300;
     margin-top: 40px;
     text-transform: uppercase;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 #fr-products span {
@@ -271,14 +272,17 @@ h3 {
 
 #fr-products-mobile {
 	 border-top: 1px solid #eee;
+	 text-align: center;
+	 padding-bottom:20px;
 }
 
 #fr-products-mobile h2 {
 	color: #955DCD;
-    font-weight: 300;
-    margin-top: 40px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+	font-weight: 300;
+	margin-top: 38px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	font-size:19px;
 }
 
 #fr-products-mobile .btn {
@@ -289,7 +293,8 @@ h3 {
 }
 
 #fr-products-mobile .btn:hover {
-	color:#fefefe;
+    color: #fefefe;
+    background: #fff;
 }
 
 #fr-products-mobile .btn>h3 {
@@ -539,12 +544,14 @@ h3 {
 }
 
 .testimonials {
-	margin-bottom: -35px;
+	margin-bottom: -25px;
 }
 
 .proven {
-	padding:0;
-	margin-bottom: -40px;
+    padding: 0;
+    margin-bottom: -20px;
+    border-top: 1px solid #eee;
+    margin-top: 29px;
 }
 
 
@@ -1036,6 +1043,22 @@ content:none;
 .mobileonly{
 	display:block;
 }
+.home-link-mobile {
+	display:block;
+	padding: 20px 20px 0;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.block1 {
+    padding-bottom: 12px;
+}
+.block2 {
+    padding-bottom: 10px;
+}
+.block4 {
+    padding-bottom: 12px;
+}
 .web-stripe-mobile .item {
     padding: 10px;
 }
@@ -1173,7 +1196,7 @@ background-color: rgba(135, 71, 199, 1);
         background-color: #8747C7;
         color: #F0E0FF;
         text-align: center;
-        padding: 20px 0 0;
+        padding-bottom: 9px;
     }
     .banner-stripe-mobile h3, .page-banner-stripe-mobile h3{
     	color:#fff;
@@ -1268,13 +1291,7 @@ background-color: rgba(135, 71, 199, 1);
          
 
 
-.home-link-mobile {
-	display:block;
-	padding: 20px 20px 0;
-    color: #fff;
-    font-size: 14px;
-    text-transform: uppercase;
-}
+
 
 .home-link-mobile:hover, .home-link-mobile:active {
 	color:#fff;
@@ -1292,15 +1309,7 @@ background-color: rgba(135, 71, 199, 1);
 .proven {
 	margin:0;
 }
-
-#fr-products-mobile h2 {
-	font-size:19px;
 }
-
-
-
-    
-  }
   
   
   

@@ -1,33 +1,33 @@
 <?php if(is_page(7)){ ?>
 <div class="divide40"></div><!-- //divide40 -->
 <?php } else { ?>
-<div class="wh-stripe">
-<div id="fr-products" class="desktoponly">
-	<div class="container">
-			<div class="row">    
-				<h2>Our Solutions</h2>
+<div class="desktoponly">
+<div id="fr-products">
+<div class="container">
+<div class="row">    
+	<h2>Our Solutions</h2>
 <?php
 $fields = CFS()->get('footer',5);
 foreach ($fields as $field) { ?>
-	<?php echo '<div class="col-md-4">' ?>
-	<?php echo '<span class="sm-title">eScholar</span>' ?>
-	<?php echo '<h3>'.$field['product_header'].'</h3>' ?>
-	<?php echo '<p>'.$field['product_text'].'</p>' ?>
-	<?php echo '<a class="btn" href="'.$field['product_link'].'">'.$field['product_button_text'].'</a>' ?>
-	<?php echo '<hr class="mobileonly"></div>' ?>
+<?php echo '<div class="col-md-4">' ?>
+<?php echo '<span class="sm-title">eScholar</span>' ?>
+<?php echo '<h3>'.$field['product_header'].'</h3>' ?>
+<?php echo '<p>'.$field['product_text'].'</p>' ?>
+<?php echo '<a class="btn" href="'.$field['product_link'].'">'.$field['product_button_text'].'</a>' ?>
+<?php echo '<hr class="mobileonly"></div>' ?>
 			                        
-	<?php $counter++;
-	if ($counter % 3 == 0) {
-	echo '</div><div class="divide40"></div><div class="row">';
-	} ?>                      
+<?php $counter++;
+if ($counter % 3 == 0) {
+echo '</div><div class="divide40"></div><div class="row">';
+} ?>                      
 			                    
 <?php   }  ?>
 
 			
-			</div><!-- /row -->
-	</div><!-- /container -->
+</div><!-- /row -->
+</div><!-- /container -->
 </div><!-- /fr-products -->
-
+</div><!-- /wh-stripe -->	
 <div id="fr-products-mobile" class="mobileonly">
 	<div class="container">
 			<div class="row">    
@@ -50,7 +50,7 @@ foreach ($fields as $field) { ?>
 </div><!-- /fr-products-mobile -->
 
 
-</div><!-- /wh-stripe -->	
+
 
 <?php   }  ?>
 
