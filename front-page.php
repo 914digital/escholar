@@ -106,7 +106,7 @@
 					<h4>What Our Clients Are Saying</h4>
 					<p><?php echo CFS()->get('testimonial_copy'); ?></p>
 	    </div><!-- /col-md-6 -->
-    <div class="col-md-6 desktoponly"><img alt="Cumberalnd Schools Logo" src="<?php echo CFS()->get('testimonial_image'); ?>" />
+    <div class="col-md-6 desktoponly"><img alt="eScholar Client Testimonial" src="<?php echo CFS()->get('testimonial_image'); ?>" />
 	    </div><!-- /col-md-6 -->
  </div><!-- /.row -->
  </div><!-- /.container -->
@@ -178,20 +178,20 @@ foreach ($fields as $field) { ?>
 			<div class="row">
     <div class="col-md-4">
 	    <h3><?php echo CFS()->get('banner_stripe_header_1'); ?></h3>
-	    <p><?php echo CFS()->get('banner_stripe_text_1'); ?></p><br />
-
+	    <p><?php echo CFS()->get('banner_stripe_text_1'); ?></p>
+<a class="btn" href="<?php echo CFS()->get('banner_stripe_button_link_1'); ?>"><?php echo CFS()->get('banner_stripe_button_copy_1'); ?></a>
     </div><!-- /col-md-4 -->
 
     <div class="col-md-4">
 	     <h3><?php echo CFS()->get('banner_stripe_header_2'); ?></h3>
-	    <p><?php echo CFS()->get('banner_stripe_text_2'); ?></p><br />
-
+	    <p><?php echo CFS()->get('banner_stripe_text_2'); ?></p>
+<a class="btn" href="<?php echo CFS()->get('banner_stripe_button_link_2'); ?>"><?php echo CFS()->get('banner_stripe_button_copy_2'); ?></a>
      </div><!-- /col-md-4 -->
 
        <div class="col-md-4">
 	       <h3><?php echo CFS()->get('banner_stripe_header_3'); ?></h3>
 	    <p><?php echo CFS()->get('banner_stripe_text_3'); ?></p>
-
+<a class="btn" href="<?php echo CFS()->get('banner_stripe_button_link_3'); ?>"><?php echo CFS()->get('banner_stripe_button_copy_3'); ?></a>
 
       </div><!-- /col-md-4 -->
 </div><!-- /.row -->
@@ -203,9 +203,11 @@ foreach ($fields as $field) { ?>
 		<div class="row">
 		<div class="col-md-4"><h3><a href="<?php echo CFS()->get('row_1_link'); ?>"><?php echo CFS()->get('row_1_header'); ?></a></h3>
 <p><?php echo CFS()->get('row_1_text'); ?></p>
+<a class="btn" href="<?php echo CFS()->get('row_1_link'); ?>"><?php echo CFS()->get('row_1_button_copy'); ?></a>
 </div><!--// col-md-4 -->
 		<div class="col-md-4"><h3><a  href="<?php echo CFS()->get('row_2_link'); ?>"><?php echo CFS()->get('row_2_header'); ?></a></h3>
 <p><?php echo CFS()->get('row_2_text'); ?></p>
+<a class="btn" href="<?php echo CFS()->get('row_2_link'); ?>"><?php echo CFS()->get('row_2_button_copy'); ?></a>
 </div><!--// col-md-4 -->
 		<div class="col-md-4"><h3><a  href="/company/our-customers/">What Our Clients Are Saying</a></h3>
 <p><?php echo CFS()->get('testimonial_copy'); ?></p></div><!--// col-md-4 -->
